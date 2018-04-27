@@ -9,6 +9,12 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   return object
 }
 
+function deleteFromObjectByKey(object, key) {
+  obj_clone = Object.assign({}, object)
+  delete obj_clone[key]
+  return obj_clone
+}
+
 function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
   return object
