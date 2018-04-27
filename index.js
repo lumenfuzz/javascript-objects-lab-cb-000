@@ -1,6 +1,7 @@
 var recipes = {}
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  object[key] = value
-  return object
+  var object_clone = object
+  object_clone[key] = value
+  return object_clone
 }
